@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatovací Aplikace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-screen">
+        <h1>Vítejte v chatu</h1>
+        <input type="text" id="username" placeholder="Zadejte své jméno">
+        <button onclick="login()">Přihlásit se</button>
+    </div>
+    <div id="chat-screen" style="display:none;">
+        <div id="chat-window">
+            <div id="messages"></div>
+        </div>
+        <input type="text" id="message" placeholder="Zadejte zprávu">
+        <button onclick="sendMessage()">Odeslat</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
